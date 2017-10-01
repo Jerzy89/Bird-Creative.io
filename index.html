@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Bird Creative</title>
+    <!--    inception of favicon    -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <!--    the end of favicon    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<div id="page-preloader" class="preloader">
+    <div class="loader"></div>
+</div>
+<header id="home">
+    <div class="wrapper">
+        <div class="top_header">
+            <div class="col-sm-4 col-lg-4">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="col-sm-4 col-lg-4">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#bars">
+                                <i class="fa fa-bars fa-2x"></i>
+                                <p>меню</p>
+                            </a>
+                            <ul id="bars">
+                                <li><a href="#home">Главная</a></li>
+                                <li><a href="#design">Студия дизайна</a></li>
+                                <li><a href="#benefits">Наши преимущества</a></li>
+                                <li><a href="#works">Примеры работ</a></li>
+                                <li><a href="#special">Наши спецпредложения</a></li>
+                                <li><a href="#last_works">Последние работы</a></li>
+                                <li><a href="#style_relevance">Стиль и Актуальность</a></li>
+                                <li><a href="#discuss">Обсудить проект</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-4 col-lg-4">
+                <div class="callback">
+                    <button type="button" data-toggle="modal" href="#callback_modal">Обратный звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="kredo">
+            <div class="desc_kredo">
+                <h1>
+                    <span class="line"></span>
+                    Берем нужную<br>
+                    <span class="hight">высоту</span><br>
+                    <span class="any">В любом проекте</span>
+                </h1>
+            </div>
+        </div>
+        <div class="forma">
+            <div class="inp1">
+                <input placeholder="Александр">
+            </div>
+            <div class="inp2">
+                <input type="email" placeholder="E-mail">
+            </div>
+            <div class="inp3">
+                <input type="tel" placeholder="Телефон">
+            </div>
+            <div class="inp4">
+                <button data-toggle="modal" href="#form1">Отправить</button>
+            </div>
+        </div>
+        <div class="mouse_icon">
+            <div class="mouse_img">
+                <img src="img/mouse_icon.png" alt="mouse_icon">
+                <p class="desc">о компании</p>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="design">
+    <div class="design_wrap">
+        <div class="rotate">
+            <p>О нас</p>
+        </div>
+        <div class="design_desc">
+            <div class="prew">
+                <h2>Студия дизайна<span class="line"></span></h2>
+                <p>Веб-студия Bird Creative – команда профессионалов и единомышленников, занимающихся созданием сайтов,
+                    разработкой веб-дизайна и брендированием.
+                    Мы многому научились и сделали уверенный старт.
+                    Теперь мы парим в мире IT-возможностей и готовы вывести на новые высоты ваш бизнес. Уверенны, что в
+                    любом деле необходим творческий подход, а в создании сайтов и брендировании тем более.
+                    Соблюдая все важные технические аспекты, мы генерируем креативные идеи, которые окрыляют, поднимают
+                    на
+                    новые вершины
+                    и в итоге дают превосходный результат.
+                </p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+            <div class="for_carousel">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/carousel/1.jpg" alt="1">
+                        </div>
+                        <div class="item">
+                            <img src="img/carousel/2.jpg" alt="2">
+                        </div>
+                        <div class="item">
+                            <img src="img/carousel/3.jpg" alt="3">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="after_carousel">
+                    <h4>Рабочий процесс</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="benefits">
+    <div class="advantages">
+        <div class="rotate">
+            <p>Чем мы гордимся</p>
+        </div>
+        <div class="desc_adv">
+            <div class="our_glory">
+                <h2>Наши преимущества</h2>
+                <span class="line"></span>
+            </div>
+            <div class="item_adv">
+                <img src="img/Notepad.png" class="Notepad" alt="img_notepad">
+                <p>Все интересующие вас услуги – в одном месте. Вам не нужно собирать свой си брендбук по крупицам.
+                    Просто обратитесь к нам и получите качественный продукт!</p>
+            </div>
+            <div class="item_adv">
+                <img src="img/Heart.png" class="Heart" alt="img_heart">
+                <p>Мы искренне любим свою работу, а потому выкладываемся на все 100%. Увлеченные своим делом,
+                    мы стремимся к идеалу в реализации каждого проекта. Именно поэтому гарантиротличный результат в
+                    задачах, которые решаем</p>
+            </div>
+            <div class="item_adv">
+                <img src="img/Profile.png" class="Profile" alt="img_profile">
+                <p>Ваше виденье, требования и пожелания для нас крайне важны. Мы прислушиваек вам иучитываем
+                    специфику вашего бизнеса при выполнении любой задачи.</p>
+            </div>
+            <div class="item_adv">
+                <img src="img/Sandglass.png" class="Sandglass" alt="img_sandglass">
+                <p>Оперативное выполнение проектов. Мы делаем свою работу настолько быстро, насколько это возможно.
+                    При этом каждый этап выполняется на высшем качественном уровне.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="works">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="exp text-center">
+                <h2>Примеры работ</h2>
+                <div class="center">
+                    <a href="#sec_block">
+                        <div class="arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-blocks" id="sec_block">
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+
+        <div class="block-item_btn">
+            <button class="more_tabs" data-doggle="modal">Посмотреть все</button>
+        </div>
+
+    </div>
+    <div class="section-blocks">
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item">
+            <div class="overlay-block text-center">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+        </div>
+        <div class="block-item_btn">
+            <button class="more_tabs" data-doggle="modal">Посмотреть все</button>
+        </div>
+    </div>
+</section>
+<section id="special">
+    <div class="sp_offers">
+        <h2 class="sp_desc">Наши спецпредложения</h2>
+        <span class="line"></span>
+    </div>
+    <div class="sp_block-item">
+        <div class="block-item text-center">
+            <div class="overlay-block">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+            <h4 class="bold">Сайт Лендинг + Логотип<br> 50 000 &#8381;</h4>
+            <p>Срок разработки от 10 рабочих дней<br>2 варианта логотипа на выбор<br>3 интерграции правок в дизайн
+            </p>
+        </div>
+        <div class="block-item text-center">
+            <div class="overlay-block">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+            <h4 class="bold">Сайт Лендинг + Логотип<br> 50 000 &#8381;</h4>
+            <p>Срок разработки от 10 рабочих дней<br>2 варианта логотипа на выбор<br>3 интерграции правок в дизайн
+            </p>
+        </div>
+        <div class="block-item block-item text-center">
+            <div class="overlay-block">
+                <h3><span class="white">Кварцевый камень</span><br>Buonostone</h3>
+                <p>Производство и продажа</p>
+                <button data-doggle="modal">Подробнее</button>
+            </div>
+            <h4 class="bold">Сайт Лендинг + Логотип<br> 50 000 &#8381;</h4>
+            <p>Срок разработки от 10 рабочих дней<br>2 варианта логотипа на выбор<br>3 интерграции правок в дизайн
+            </p>
+        </div>
+    </div>
+</section>
+<section id="last_works">
+
+    <div class="Unibravo_title">
+        <h2>Последные работы</h2>
+        <span class="line"></span>
+    </div>
+    <div class="Unibravo">
+        <img src="img/Unibravo.jpg" alt="Unibravo" class="Uni_img">
+        <div class="Uni_desc">
+            <h3 class="Uni_h3"><span>Unibravo</span><br>Люблю дорогу</h3>
+            <span class="line"></span>
+            <p class="Uni_p">Разработка логотипа для UNIBRAVO – портала, посвященного путешествиям и активному
+                отдыху. Логотип выполнен с учетом всех пожеланий заказчика. Будучи простым и легким для восприятия,
+                он включает в себя изображение корпоративных букв UВ и отображение любви к дороге, приключениям и
+                новым ощущениям.</p>
+            <p class="Uni_p2">Комент от заказчика: «Ребята хорошо справились с поставленной задачей уложились в сроки
+                было приятно с ними работать. Видно что у них настоящая команда и креативный творческий взгляд»</p>
+            <button data-doggle="modal">Подробнее</button>
+        </div>
+
+    </div>
+
+    <div class="Juicy_title">
+        <h2>Последные работы</h2>
+        <span class="line"></span>
+    </div>
+    <div class="Juicy">
+        <div class="Juicy_desc">
+            <h3 class="Uni_h3">Разработка логотипа <br>и сайта для JV</h3>
+            <span class="line"></span>
+            <p class="Uni_p">Разработка логотипа и создание сайта для интернет-магазина Juicy Vapors. Клиент был
+                заинтересован в разработке стильного и удобного для пользователей ресурса с большими изображениями.
+                А еще в списке задач значился запоминающийся и нескучный логотип. Нам удалось удовлетворить
+                требования заказчика в полной мере!</p>
+            <p class="Uni_p2">Комент от заказчика: «Ребята хорошо справились с поставленной задачей уложились в сроки
+                было приятно с ними работать. Видно что у них настоящая команда и креативный творческий взгляд»</p>
+            <button data-doggle="modal">Подробнее</button>
+        </div>
+        <img src="img/Juicy.jpg" alt="Juicy" class="Juicy_img">
+    </div>
+</section>
+<section id="style_relevance">
+    <div class="relevance">
+        <div class="rotate">
+            <p>Современный дизайн</p>
+        </div>
+        <div class="wrap_rel">
+            <div class="desc_rel">
+                <h2>Стиль и актуальность</h2>
+                <span class="line"></span>
+                <p>Компания, нацеленная на развитие и успех, обязана обладать собственным сайтом и выделяться на
+                    современнрынке ярким и запоминающимся фирменным стилем и логотипом. Вам нужен современный сайт с его
+                    продвижениемпоисковых системах и мобильной версией? Вам необходима раскрутка в социальных сетях и
+                    другие
+                    услуги?</p>
+            </div>
+            <div class="rel_img">
+                <img src="img/ipad.png" alt="iPad" class="iPad">
+                <img src="img/iPad2.png" alt="iPad_down" class="iPad_down">
+            </div>
+        </div>
+        <div class="talk_rel text-center">
+            <h2>Вы можете обсудить с нами свой проект</h2>
+            <div class="center">
+                <a href="#discuss">
+                    <div class="arrow"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="discuss">
+    <div class="wrap">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="desc_To text-center">
+                    <h2>Обсудить проект</h2>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <form action="" class="form_To">
+                <div class="row text-center">
+                    <div class="col-sm-3 cucol-md-3">
+                        <input type="text" placeholder="Александр">
+                    </div>
+                    <div class="col-sm-3 cucol-md-3">
+                        <input type="mail" placeholder="E-mail">
+                    </div>
+                    <div class="col-sm-3 cucol-md-3">
+                        <input type="tel" placeholder="Телефон">
+                    </div>
+                    <div class="col-sm-3 cucol-md-3">
+                        <button type="button" data-toggle="modal" data-target="#">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer id="contacts">
+    <div class="container">
+        <div class="foot_logo">
+            <img src="img/logo.png" alt="foot_logo">
+            <p>+ 7 495 545 55 55<br>info@birdcreative.ru<br>© Copyright 2016. Yellow Bird</p>
+        </div>
+        <div class="webDesi">
+            <ul>Web design
+                <a href="#">
+                    <li>Сайт визитка</li>
+                </a>
+                <a href="#">
+                    <li>Сайт каталог</li>
+                </a>
+                <a href="#">
+                    <li>Интернет магазин</li>
+                </a>
+                <a href="#">
+                    <li>Landing page</li>
+                </a>
+                <a href="#">
+                    <li>Мобильная версия</li>
+                </a>
+                <a href="#">
+                    <li>Поддержка сайтов</li>
+                </a>
+                <a href="#">
+                    <li>Редизайн</li>
+                </a>
+            </ul>
+        </div>
+        <div class="Ceo">
+            <ul>Продвижение
+                <a href="#">
+                    <li>Ceo оптимизация</li>
+                </a>
+                <a href="#">
+                    <li>Поисковое продвижение</li>
+                </a>
+                <a href="#">
+                    <li>Контекстная реклама</li>
+                </a>
+                <a href="#">
+                    <li>Аудит сайта</li>
+                </a>
+                <a href="#">
+                    <li>Наполнение сайта</li>
+                </a>
+                <a href="#">
+                    <li>Продвижение в социальных сетях</li>
+                </a>
+                <a href="#">
+                    <li>Создание групп</li>
+                </a>
+                <a href="#">
+                    <li>Копирайтинг</li>
+                </a>
+            </ul>
+        </div>
+        <div class="ayden">
+            <ul>Айдентика
+                <a href="#">
+                    <li>Разработка логотипа</li>
+                </a>
+                <a href="#">
+                    <li>Фирменный стиль</li>
+                </a>
+                <a href="#">
+                    <li>Создание брендбука</li>
+                </a>
+                <a href="#">
+                    <li>Каталоги</li>
+                </a>
+                <a href="#">
+                    <li>Буклеты</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--    Modal windows
+------------------------------------------------------------>
+<div class="modal fade" id="callback_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                </button>
+                <h4 class="modal-title" id="exampleModalLabel">Ваш воспрос</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">Отправитель:</label>
+                        <input class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">Тект сообщения:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="form1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                Ваше сообщение отправлено
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    Scripts
+------------------------------------------------------------>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

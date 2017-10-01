@@ -1,0 +1,276 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    nav li ul {
+        left: 23%;
+    }
+
+    .prew {
+        flex-basis: 100%;
+    }
+
+    .for_carousel {
+        flex-basis: 100%;
+    }
+
+    #carousel-example-generic {
+        top: 20px;
+    }
+
+    .after_carousel {
+        margin-left: 30px;
+    }
+
+    .item_adv p {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    nav li ul {
+        left: 17%;
+    }
+
+    .item_adv {
+        flex-basis: 100%;
+    }
+
+    .our_glory {
+        margin-left: 7%;
+    }
+
+    .Uni_p {
+        font-size: 18px;
+    }
+
+    .Uni_p2 {
+        font-size: 14px;
+    }
+
+    #style_relevance {
+        padding-top: 80px;
+        padding-right: 0;
+    }
+
+    .relevance .rotate {
+        display: none;
+    }
+
+    .wrap_rel {
+        flex-basis: 100%;
+    }
+
+    .desc_rel {
+        padding-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav li ul {
+        left: -42px;
+    }
+
+    nav li > ul li a {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .forma {
+        margin-top: 0;
+    }
+
+    .forma button {
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .mouse_icon {
+        display: none;
+    }
+
+    .rotate {
+        display: none;
+    }
+
+    .design_wrap {
+        margin: 25px;
+    }
+
+    .our_glory {
+        margin-left: 7%;
+    }
+
+    .item_adv p {
+        font-size: 14px;
+    }
+
+    .block-item {
+        flex-basis: 49%;
+    }
+
+    .sp_block-item .block-item {
+        flex-basis: 100%;
+        margin-bottom: 20%;
+    }
+
+    #last_works {
+        margin-top: 0;
+    }
+
+    .Unibravo img, .Juicy img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .Uni_desc,
+    .Juicy_desc {
+        flex-basis: 100%;
+        margin: 50px;
+    }
+
+    .Juicy_desc {
+        order: 1;
+    }
+
+    .desc_rel {
+        flex-basis: 100%;
+    }
+
+    .rel_img {
+        margin-top: 50px;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .iPad_down {
+        align-self: flex-end;
+    }
+
+    .form_To button {
+        margin-top: 50px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 670px) {
+    .desc_kredo h1 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .desc_kredo span.hight {
+        font-size: 48px;
+    }
+
+    .desc_kredo h1 span.hight {
+        font-size: 45px;
+    }
+
+    .design_wrap {
+        margin: 25px;
+    }
+
+    .design_wrap .rotate {
+        display: none;
+    }
+
+    #benefits {
+        padding: 25px;
+    }
+
+    .desc_adv {
+        flex-basis: 100%;
+    }
+
+    .item_adv {
+        margin-top: 25px;
+    }
+
+    .foot_logo {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        order: 2;
+    }
+
+    .foot_logo p {
+        flex-basis: 40%;
+    }
+
+    .webDesi, .Ceo, .ayden {
+        flex-basis: 23%;
+        justify-content: center;
+        margin-top: 50px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .callback {
+        display: none;
+    }
+
+    nav li ul {
+        left: -136px;
+    }
+
+    .forma {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .inp1, .inp2, .inp3, .inp4 {
+        align-self: center;
+    }
+
+    .design_desc {
+        flex-basis: 100%;
+    }
+
+    .prew h2 {
+        font-size: 24px;
+    }
+
+    .prew p {
+        font-size: 14px;
+    }
+
+    .after_carousel h4 {
+        font-size: 16px;
+    }
+
+    .sp_block-item .block-item:nth-child(2),
+    .sp_block-item .block-item:nth-child(3) {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .block-item {
+        flex-basis: 100%;
+    }
+
+    .sp_block-item .block-item:nth-child(2),
+    .sp_block-item .block-item:nth-child(3) {
+        margin-top: 24%;
+    }
+
+    #last_works {
+        margin-top: 90px;
+    }
+
+    .desc_rel {
+        padding: 50px;
+    }
+
+    .desc_rel p {
+        font-size: 14px;
+    }
+
+    .iPad_down {
+        width: 300px;
+    }
+
+}

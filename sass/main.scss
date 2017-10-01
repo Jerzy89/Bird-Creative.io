@@ -1,0 +1,625 @@
+@import "setting";
+@import "fonts";
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+//   preloader
+// ==========================================================================
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 2;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+  &.done {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loader {
+  width: 75px;
+  height: 75px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top-color: blue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: 1s spin infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+//   header
+// ==========================================================================
+header {
+  background-image: url(../img/header_bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  background: $accent;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+//   Top header
+// ==========================================================================
+.top_header {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.logo {
+  flex-basis: 32%;
+  text-align: right;
+  margin-top: 15px;
+}
+
+nav, .callback {
+  flex-basis: 32%;
+  margin-top: 30px;
+}
+
+nav {
+  p {
+    position: relative;
+  }
+  > ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    > ul {
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    ul {
+      position: absolute;
+      display: none;
+      left: 26%;
+      z-index: 5;
+    }
+    &:hover > ul {
+      display: block;
+    }
+  }
+  ul {
+    > li > a {
+      text-align: center;
+      color: #000;
+    }
+    li a {
+      display: block;
+    }
+  }
+  li > ul li a {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.24);
+    border-bottom: 1px solid #666;
+    transition: 0.5s all;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+      background-color: #cda52a;
+      padding: 10px 0 10px 20px;
+    }
+  }
+}
+
+.callback {
+  text-align: center;
+  line-height: 22px;
+  button {
+    padding: 7px 15px;
+    border-color: white;
+    &:hover {
+      background-color: rgb(255, 200, 60);
+    }
+  }
+}
+
+.kredo {
+  flex-basis: 100%;
+}
+
+.desc_kredo {
+  margin: 120px;
+  span.line {
+    display: block;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: "SegoeUI", sans-serif;
+    color: #000;
+    font-size: 46px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 44px;
+    span.hight {
+      font-family: "SegoeUIBold", sans-serif;
+      font-size: 90px;
+    }
+    span.any {
+      display: inline-block;
+      padding-top: 10px;
+    }
+  }
+}
+
+.forma {
+  flex-basis: 90%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  input {
+    border-bottom: 1px solid #D98D25;
+    padding-bottom: 15px;
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #000;
+    }
+  }
+  button {
+    border-color: #fff;
+    &:hover {
+      background-color: rgb(255, 200, 60);
+    }
+  }
+}
+
+.mouse_icon {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+
+.mouse_img {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 31px;
+    height: 47px;
+  }
+  p {
+    margin: 0 0 10px -35%;
+  }
+}
+
+//   about us - block #design
+// ==========================================================================
+#design {
+  margin: 0;
+  padding: 1px;
+  background-color: #CCCCCC;
+}
+
+.design_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 80px 85px 64px 0;
+  .rotate {
+    margin-bottom: 5%;
+  }
+}
+
+.design_desc {
+  flex-basis: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+.prew {
+  flex-basis: 48%;
+  padding: 25px 25px 0;
+  h2 {
+    font-family: "SegoeUISemiBold", sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    span {
+      display: block;
+      font-weight: 600;
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+.for_carousel {
+  flex-basis: 52%;
+  height: auto;
+  align-self: flex-start;
+}
+//    slider
+#carousel-example-generic {
+  background-size: cover;
+  top: -15px;
+  border: 10px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #999;
+}
+
+.after_carousel {
+  margin-top: 50px;
+  h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "SegoeUIRegular", sans-serif;
+  }
+}
+
+//    advantages
+// ==========================================================================
+#benefits {
+  margin: 0;
+  padding: 80px 85px 64px 0;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.desc_adv {
+  flex-basis: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.our_glory {
+  width: 100%;
+  margin-left: 3%;
+}
+
+.item_adv {
+  flex-basis: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  img {
+    width: 50px;
+    margin: 0 auto;
+  }
+  p {
+    flex-basis: 80%;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.Notepad {
+  flex-basis: 37px;
+  height: 50px;
+}
+
+.Heart {
+  flex-basis: 49px;
+  height: 46px;
+}
+
+.Profile {
+  flex-basis: 46px;
+  height: 49px;
+}
+
+.Sandglass {
+  flex-basis: 35px;
+  height: 50px;
+}
+
+//    for arrow
+.desc_adv > img {
+  float: left;
+  margin: 0 15px 1% 0;
+}
+
+//   examples of the works - block #works
+// ==========================================================================
+.exp {
+  margin-bottom: 100px;
+}
+
+.section-blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.block-item {
+  height: 400px;
+  flex-basis: 33%;
+  background-image: url(../img/item_bg.png);
+  background-size: cover;
+}
+
+.overlay-block {
+  width: 100%;
+  height: 100%;
+  padding: 50px 15px;
+  background: rgba(255, 200, 0, 0.76);
+  opacity: 0;
+  position: relative;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  h3 {
+    margin-top: 30px;
+    font-size: 32px;
+  }
+  p {
+    font-size: 20px;
+  }
+  button {
+    border-color: #fff;
+  }
+}
+
+.block-item_btn {
+  position: relative;
+  margin: 0;
+}
+
+.more_tabs {
+  position: relative;
+  margin-top: 50px;
+}
+
+.block-item:hover .overlay-block {
+  opacity: 1;
+}
+
+.white {
+  color: #fff;
+  font-size: 40px;
+}
+
+//   special Propositions - block #special
+// ==========================================================================
+#special {
+  margin-top: 70px;
+}
+
+.sp_block-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .block-item {
+    flex-basis: 33%;
+  }
+}
+
+.bold {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.sp_offers {
+  margin-left: 18%;
+}
+
+//   block #last_works
+// ==========================================================================
+#last_works {
+  margin-top: 170px;
+}
+
+.Unibravo_title, .Juicy_title {
+  text-align: center;
+  span.line {
+    margin: 30px auto;
+  }
+}
+
+.Unibravo, .Juicy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  img {
+    max-width: 48%;
+    height: 628px;
+  }
+}
+
+.Uni_desc, .Juicy_desc {
+  flex-basis: 38%;
+}
+
+.Uni_p {
+  font-size: 22px;
+}
+
+.Uni_p2 {
+  font-size: 16px;
+}
+
+.Uni_desc {
+  margin-right: 10%;
+}
+
+.Juicy_desc {
+  margin-left: 10%;
+}
+
+//   yellow block #style_relevance
+// ==========================================================================
+#style_relevance {
+  margin-top: 50px;
+  padding: 160px 85px 110px 0;
+  background-color: $accent;
+  .center,
+  .arrow {
+    background: #fff;
+    &:before {
+      border-bottom: 3px solid #fff;
+      border-right: 3px solid #fff;
+    }
+  }
+}
+
+.relevance {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .rotate {
+    margin-bottom: 20px;
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+.wrap_rel {
+  flex-basis: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.desc_rel {
+  flex-basis: 50%;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.rel_img {
+  flex-basis: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.iPad {
+  width: 170px;
+  margin-top: -30px;
+}
+
+.iPad_down {
+  width: 400px;
+  margin-left: -20px;
+}
+
+.talk_rel {
+  margin-top: 50px;
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+//   down forma - block #discuss
+// ==========================================================================
+.wrap {
+  margin: 70px 0 150px;
+}
+
+.desc_To span.line {
+  margin: 0 auto 70px;
+}
+
+.form_To {
+  margin-top: 70px;
+  input {
+    padding-bottom: 15px;
+  }
+}
+
+//   footer
+// ==========================================================================
+footer {
+  padding: 1px;
+  background-color: #2d2c2c;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 80px;
+  a {
+    color: #636262;
+    &:hover {
+      text-decoration: none;
+      color: #cfcfcf;
+    }
+  }
+  ul {
+    color: #cbcbcb;
+  }
+}
+
+.foot_logo {
+  margin-top: 20px;
+  margin-right: 10px;
+  p {
+    margin-top: 25px;
+  }
+}
+
+.foot_logo, .webDesi, .Ceo, .ayden {
+  flex-basis: 23%;
+}
+
+.foot_logo {
+  color: #8c8b8b;
+}
+
+.webDesi, .Ceo, .ayden {
+  margin-top: 130px;
+}
+
